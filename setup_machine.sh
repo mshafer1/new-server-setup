@@ -21,7 +21,11 @@ curl "https://gist.githubusercontent.com/mshafer1/c4ad7a6a3b287ec62bc7f5cf568e01
 curl "https://gist.githubusercontent.com/mshafer1/11c693baf0e0a70a83f208d4bdfc9554/raw/f9b93a5400822e70cf7aee25a7c6be510f32d34a/bash_aliases.sh" >> ~/.bash_aliases
 source .bash_aliases
 
- wget -P ~/scripts/ "$scripts_root/epyenv_install.sh"
- chmod +x ~/scripts/epyenv_install.sh
- ln -s ~/scripts/epyenv_install.sh /usr/bin/epyenv_install
- 
+wget -P ~/scripts/ "$scripts_root/epyenv_install.sh"
+chmod +x ~/scripts/epyenv_install.sh
+ln -s ~/scripts/epyenv_install.sh /usr/bin/epyenv_install
+
+for v in 3.6 3.7 3.8 3.9 3.10
+do
+ epyenv_install $v
+done
