@@ -17,7 +17,14 @@ apt-get install \
   libssl-dev \
   libffi-dev \
   -y
-  
+ 
+# extra Py libraries
+apt-get install \
+  bzip2 \
+  readline \
+  SQLite3 \
+  -y
+ 
 # pyenv
 curl https://pyenv.run | bash
 
