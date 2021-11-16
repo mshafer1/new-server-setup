@@ -19,7 +19,7 @@ fi
 # maybe use flag or cache to do once every 24 max??
 # pyenv update
 
-full_version=$(pyenv install --list | grep -e "^\s*$1" | tail -n 1)
+full_version=$(pyenv install --list | grep -e "^\s*$1\." | tail -n 1)
 
 echo "Selected $full_version"
 
