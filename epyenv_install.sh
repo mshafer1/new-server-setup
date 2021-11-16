@@ -16,7 +16,8 @@ if [ -n "$2" ]; then
   exit 1
 fi
 
-pyenv update
+# maybe use flag or cache to do once every 24 max??
+# pyenv update
 
 full_version=$(pyenv install --list | grep -e "^\s*$1" | tail -n 1)
 
