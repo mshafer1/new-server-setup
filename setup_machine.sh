@@ -29,3 +29,7 @@ for v in 3.6 3.7 3.8 3.9 3.10
 do
  epyenv_install $v
 done
+
+# install poetry
+curl -sSL https://install.python-poetry.org | python -
+poetry --version
