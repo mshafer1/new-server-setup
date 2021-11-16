@@ -7,6 +7,7 @@ apt-get upgrade -y
 apt-get install \
   nano \
   tmux \
+  git-all \
   python3-venv \
   python3-pip \
   python3-dev \
@@ -17,3 +18,5 @@ apt-get install \
   libffi-dev \
   -y
   
+# pyenv
+curl https://pyenv.run | bash
