@@ -7,6 +7,9 @@ apt-get upgrade -y
 apt-get install \
   nano \
   tmux \
+  make \
+  wget \
+  curl \
   git-all \
   python3-venv \
   python3-pip \
@@ -18,11 +21,22 @@ apt-get install \
   libffi-dev \
   -y
  
-# extra Py libraries
+# extra Py libraries - https://github.com/pyenv/pyenv/wiki#troubleshooting--faq
 apt-get install \
-  bzip2 \
-  readline \
-  SQLite3 \
+  build-essential \
+  libssl-dev \
+  zlib1g-dev \
+  libbz2-dev \
+  libreadline-dev \
+  libsqlite3-dev \
+  llvm \
+  libncursesw5-dev \
+  xz-utils \
+  tk-dev \
+  libxml2-dev \
+  libxmlsec1-dev \
+  libffi-dev \
+  liblzma-dev \
   -y
  
 # pyenv
