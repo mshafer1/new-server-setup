@@ -1,6 +1,6 @@
 #!/bin/bash -v
 
-docker_verison=$(docker -v)
+docker_version=$(docker -v)
 if [ "-1" == "-f" ]; then
   docker_version=""
 fi
@@ -11,6 +11,7 @@ if [ -n "$docker_version" ]; then
   exit 0
 fi
 
+echo proceeding
 
 # make sure there's no old instances of docker
 apt-get remove \
