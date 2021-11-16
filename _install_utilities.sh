@@ -20,3 +20,5 @@ apt-get install \
   
 # pyenv
 curl https://pyenv.run | bash
+
+echo 'PATH="$PATH":~/.pyenv/bin' >> ~/.bash_aliases
