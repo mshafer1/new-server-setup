@@ -48,3 +48,7 @@ sudo usermod -aG docker $USER
 
 # refresh group list - this allows for running docker commands now.
 newgrp docker 
+
+docker -v
+docker run hello-world
+
