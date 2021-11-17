@@ -30,6 +30,3 @@ do
  epyenv_install $v
 done
 
-# install poetry
-curl -sSL https://install.python-poetry.org | python -
-poetry --version
