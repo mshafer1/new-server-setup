@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 key_file="${1:-~/.ssh/id_rsa}"
 
