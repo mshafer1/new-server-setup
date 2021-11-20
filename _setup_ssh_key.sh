@@ -9,4 +9,4 @@ if [ -f "$key_file" ]; then
 fi
 
 echo "Generating ssh key $key_file"
-ssh-keygen -t rsa -N '' -f $key_file
+ssh-keygen -t rsa -N '' -f "$key_file"
