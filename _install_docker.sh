@@ -1,7 +1,7 @@
 #!/bin/bash -v
 
 docker_version=$(docker -v)
-if [ "-1" == "-f" ]; then
+if [ "$1" == "-f" ]; then
   docker_version=""
 fi
 
