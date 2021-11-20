@@ -30,3 +30,5 @@ do
  epyenv_install $v
 done
 
+# ssh key
+curl "$scripts_root/_setup_ssh_key.sh" | bash -
