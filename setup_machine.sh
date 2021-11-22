@@ -32,3 +32,10 @@ done
 
 # ssh key
 curl "$scripts_root/_setup_ssh_key.sh" | bash -
+
+
+# run updates on schedule
+mkdir --parent /root/scripts
+curl "$scripts_root/run_updates.sh" > /root/scripts/run_updates.sh
+chmod +x /root/scripts/run_updates.sh
+curl "$scripts_root/_setup_updates.sh" | bash -
