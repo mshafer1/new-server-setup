@@ -52,3 +52,5 @@ newgrp docker
 docker -v
 docker run hello-world
 
+# installing via pip to always get latest stable, using pipx for venv and global path
+pipx install docker-compose
