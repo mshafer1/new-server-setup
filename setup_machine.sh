@@ -27,7 +27,7 @@ ln -s ~/scripts/epyenv_install.sh /usr/bin/epyenv_install
 
 for v in 3.6 3.7 3.8 3.9 3.10
 do
- epyenv_install $v
+ pyenv install "$v:latest"
 done
 
 # ssh key
